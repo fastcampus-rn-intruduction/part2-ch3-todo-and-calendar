@@ -26,6 +26,7 @@ export default function App() {
     add1Month,
   } = useCalendar(now);
   const {
+    todoList,
     filteredTodoList,
     input,
     setInput,
@@ -47,6 +48,7 @@ export default function App() {
   const ListHeaderComponent = () => (
     <View>
       <Calendar
+        todoList={todoList}
         columns={columns}
         selectedDate={selectedDate}
         onPressLeftArrow={onPressLeftArrow}
