@@ -26,7 +26,7 @@ export default function App() {
     add1Month,
   } = useCalendar(now);
   const {
-    todoList,
+    filteredTodoList,
     input,
     setInput,
     toggleTodo,
@@ -156,7 +156,7 @@ export default function App() {
         <>
           <FlatList
             ref={flatListRef}
-            data={todoList}
+            data={filteredTodoList}
             style={{ flex: 1 }}
             contentContainerStyle={{ 
               paddingTop: statusBarHeight + 30

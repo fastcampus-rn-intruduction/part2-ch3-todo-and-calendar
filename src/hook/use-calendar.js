@@ -23,7 +23,7 @@ export const useCalendar = (now) => {
     setSelectedDate(newSelectedDate);
   }  
   const add1Month = () => {
-    const newSelectedDate = dayjs(selectedDate).subtract(1, 'month');
+    const newSelectedDate = dayjs(selectedDate).add(1, 'month');
     setSelectedDate(newSelectedDate);
   }
 
